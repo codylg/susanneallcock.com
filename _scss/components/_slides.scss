@@ -1,0 +1,15 @@
+.slides {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: $page-padding / 2;
+  border-radius: $radius;
+  @include prefix(box-shadow, 0 1px 3px rgba($black, 0.2));
+
+  img {
+
+    &:not(:first-of-type) {
+      position: absolute;
+      top: 0;
+    }
+  }
+}

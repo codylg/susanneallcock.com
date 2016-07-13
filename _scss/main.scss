@@ -1,0 +1,17 @@
+$font: Georgia, serif;
+$font-sans: sans-serif;
+$page-padding: 40px;
+$header-width: 300px;
+$content-sidebar-width: 360px;
+$radius: 2px;
+
+@import 'lib/normalize';
+@import 'global/mixins';
+@import 'global/colors';
+@import 'global/document';
+@import 'global/global';
+@import 'components/content-panel';
+@import 'components/footer';
+@import 'components/menu';
+@import 'components/slides';
+@import 'responsive/responsive';

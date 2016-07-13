@@ -1,0 +1,82 @@
+@media (max-width: 1024px) {
+
+  header.page-menu {
+    width: $header-width - $page-padding;
+  }
+
+  .content-panels {
+    width: calc(100vw - #{$header-width - $page-padding});
+    padding-right: $page-padding / 2;
+    margin-left: $header-width - $page-padding;
+  }
+}
+
+@media (max-width: 700px) {
+
+  body::after {
+    display: none;
+  }
+
+  header.page-menu {
+    position: relative;
+    width: 100vw;
+
+    > nav {
+      padding-top: 2px;
+
+      a {
+        display: inline-block;
+        width: calc(50% - 1px);
+        padding-right: 0;
+        padding-left: 0;
+
+        &:nth-of-type(odd) {
+          margin-right: 2px;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    img.tax-institute-logo {
+      display: none;
+    }
+  }
+
+  .slides {
+    display: none;
+  }
+
+  .content-panels {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    @include prefix(animation-delay, 0.33s);
+  }
+
+  .content-panel {
+    @include prefix(flex-direction, column);
+    min-height: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    @include prefix(box-shadow, none);
+
+    .content-panel-header {
+      width: 100%;
+      padding-right: $page-padding / 2;
+      padding-left: $page-padding / 2;
+    }
+  }
+
+  footer.page-footer {
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin-top: 0;
+    border-radius: 0;
+    @include prefix(box-shadow, none);
+  }
+}

@@ -1,0 +1,23 @@
+header.page-menu
+  a.sa-logo(href="/")
+    img(src="/img/sa-logo.png", alt="Susanne Allcock - Chartered accountant, business advisor")
+
+  nav
+    if pageHome
+      a(href="/").white-text.selected About
+    else
+      a(href="/").white-text About
+    if pageServices
+      a(href="/services").white-text.selected Services
+    else
+      a(href="/services").white-text Services
+    if pageContact
+      a(href="/contact").white-text.selected Contact
+    else
+      a(href="/contact").white-text Contact
+    if pageLinks
+      a(href="/links").white-text.selected Links
+    else
+      a(href="/links").white-text Links
+
+  img.tax-institute-logo(src="/img/the-tax-institute.png", alt="The Tax Insititue Chartered Tax Advisor")

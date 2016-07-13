@@ -1,0 +1,43 @@
+.content-panels {
+  @include prefix(box-sizing, border-box);
+  width: calc(100vw - #{$header-width});
+  max-width: $page-padding * 4 + $content-sidebar-width + 325px;
+  padding: $page-padding / 2;
+  margin-top: 5px;
+  margin-left: $header-width;
+  @include prefix(animation, fade-and-slide 1s ease 1);
+  @include prefix(animation-fill-mode, both);
+}
+
+.content-panel {
+  @include prefix(box-sizing, border-box);
+  @include flex;
+  overflow: hidden;
+  margin-bottom: $page-padding;
+  border-radius: $radius;
+  background-color: $white;
+  font-size: 0;
+  @include prefix(box-shadow, 0 1px 3px rgba($black,0.2));
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .content-panel-header {
+    @include prefix(box-sizing, border-box);
+    width: 100%;
+    padding: $page-padding;
+    margin: $page-padding / 2 0;
+    @include prefix(flex-shrink, 0);
+    border-top: 1px dashed $grey-light;
+    border-bottom: 1px dashed $grey-light;
+
+    > *:first-child {
+      margin-top: 0;
+    }
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

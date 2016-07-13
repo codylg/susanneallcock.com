@@ -1,0 +1,44 @@
+block variables
+  - var title = "Tax Accountant & Business Advisor"
+  - var slug = ""
+  - var pageHome = true
+
+- var description = "Based in north Brisbane, we provide proactive solutions to specific taxation needs, and a wide range of accounting advisory services."
+
+doctype html
+html(lang="en")
+
+  head
+
+    title #{title} &#8729; Susanne Allcock
+    meta(name="description", content="#{description}")
+    meta(name="robots", content="NOODP")
+    meta(charset="utf-8")
+    meta(name="viewport", content="initial-scale=1")
+    meta(name="google-site-verification", content="6-Zbuvm5ungIDZTOPjb1LrYj6jVsC4QNqK3paglf-mA")
+
+    //- Opengraph
+    meta(property="og:title", content="#{title}")
+    meta(property="og:site_name", content="Susannce Allcock")
+    meta(property="og:description", content="#{description}")
+    meta(property="og:type", content="website")
+    meta(property="og:url", content="http://susanneallcock.com.au/#{slug}")
+
+    link(rel="stylesheet", href="/static/styles.css", async)
+
+    block head
+
+  body
+
+    block menu
+      include _menu
+      
+    .content-panels
+    
+      block content
+      
+      block footer
+      
+        footer.page-footer
+          p
+            a.grey-dark-text(href="/privacy-terms") Privacy statement &amp; terms and conditions of use

@@ -1,0 +1,19 @@
+.white-text {
+  color: $white;
+
+  a {
+    border-bottom-color: rgba($white, 0.33);
+
+    &:hover {
+      border-bottom-color: $white;
+    }
+  }
+}
+
+.grey-text {
+  color: $grey;
+}
+
+.grey-dark-text {
+  color: $grey-dark;
+}

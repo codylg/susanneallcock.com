@@ -1,0 +1,68 @@
+header.page-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow: visible;
+  @include prefix(box-sizing, border-box);
+  width: $header-width;
+  background-color: $charcoal;
+  color: $charcoal;
+
+  .sa-logo {
+    @include prefix(box-sizing, border-box);
+    display: block;
+    width: 100%;
+    padding: $page-padding;
+    @include linear-gradient(175, rgb(45,94,135), rgb(145,178,175), rgb(200,208,188));
+    background-color: rgb(165,188,185);
+
+    img {
+      max-width: 214px;
+      margin: 0 auto;
+    }
+  }
+
+  > nav {
+    padding-top: 5px;
+    @include prefix(animation, fade-and-slide 1s ease 1);
+    @include prefix(animation-fill-mode, both);
+    @include prefix(animation-delay, 0.33s);
+
+    a {
+      display: block;
+      padding: 12px;
+      margin-bottom: 2px;
+      background-color: $blue;
+      font-family: $font-sans;
+      font-weight: 700;
+      font-size: 1.4rem;
+      text-align: center;
+
+      &:hover {
+        background-color: $blue-light;
+      }
+
+      &.selected {
+        position: relative;
+        background-color: $blue-dark;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: -4px;
+          width: 4px;
+          height: 100%;
+          border-radius: 0 $radius $radius 0;
+          background-color: $blue-dark;
+        }
+      }
+    }
+  }
+
+  img.tax-institute-logo {
+    width: 140px;
+    margin: $page-padding auto;
+  }
+}
