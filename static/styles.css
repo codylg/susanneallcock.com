@@ -706,12 +706,12 @@ header.page-menu img.tax-institute-logo {
 
 @media (max-width: 1024px) {
   header.page-menu {
-    width: 260px;
+    width: 220px;
   }
   .content-panels {
-    width: calc(100vw - 260px);
+    width: calc(100vw - 220px);
     padding-right: 20px;
-    margin-left: 260px;
+    margin-left: 220px;
   }
 }
 

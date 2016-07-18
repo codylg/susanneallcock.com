@@ -1,13 +1,13 @@
 @media (max-width: 1024px) {
 
   header.page-menu {
-    width: $header-width - $page-padding;
+    width: $header-width-small;
   }
 
   .content-panels {
-    width: calc(100vw - #{$header-width - $page-padding});
+    width: calc(100vw - #{$header-width-small});
     padding-right: $page-padding / 2;
-    margin-left: $header-width - $page-padding;
+    margin-left: $header-width-small;
   }
 }
 
