@@ -1,7 +1,7 @@
 .content-panels {
   @include prefix(box-sizing, border-box);
   width: calc(100vw - #{$header-width});
-  max-width: $page-padding * 4 + $content-sidebar-width + 325px;
+  max-width: 880px;
   padding: $page-padding / 2;
   margin-top: 5px;
   margin-left: $header-width;
