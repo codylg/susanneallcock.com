@@ -1,1 +1,1 @@
-This is the repository for **[susanneallcock.com.au](http://susanneallcock.com.au)**
+This is the repository for **[susanneallcock.com](http://susanneallcock.com)**
