@@ -61,8 +61,12 @@ header.page-menu {
     }
   }
 
-  img.tax-institute-logo {
-    width: 140px;
-    margin: $page-padding auto;
+  div.institute-logos {
+
+    img {
+      width: 120px;
+      margin: $page-padding auto;
+      opacity: 0.66;
+    }
   }
 }

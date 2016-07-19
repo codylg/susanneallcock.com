@@ -1,3 +1,24 @@
+@media (max-height: 750px) and (min-width: 1024px), (max-height: 670px) {
+
+  header.page-menu {
+
+    div.institute-logos {
+      margin-top: $page-padding;
+      text-align: center;
+
+      img {
+        display: inline-block;
+        width: 90px;
+        margin: 0;
+
+        &:first-child {
+          margin-right: $page-padding / 4;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
 
   header.page-menu {
@@ -40,8 +61,20 @@
       }
     }
 
-    img.tax-institute-logo {
-      display: none;
+    div.institute-logos {
+      padding-bottom: $page-padding;
+      margin-top: $page-padding;
+      text-align: center;
+
+      img {
+        display: inline-block;
+        width: 120px;
+        margin: 0;
+
+        &:first-child {
+          margin-right: $page-padding;
+        }
+      }
     }
   }
 

@@ -680,9 +680,10 @@ header.page-menu > nav a.selected::after {
   background-color: #1473eb;
 }
 
-header.page-menu img.tax-institute-logo {
-  width: 140px;
+header.page-menu div.institute-logos img {
+  width: 120px;
   margin: 40px auto;
+  opacity: 0.66;
 }
 
 .slides {
@@ -702,6 +703,21 @@ header.page-menu img.tax-institute-logo {
 .slides img {
   position: absolute;
   top: 0;
+}
+
+@media (max-height: 750px) and (min-width: 1024px), (max-height: 670px) {
+  header.page-menu div.institute-logos {
+    margin-top: 40px;
+    text-align: center;
+  }
+  header.page-menu div.institute-logos img {
+    display: inline-block;
+    width: 90px;
+    margin: 0;
+  }
+  header.page-menu div.institute-logos img:first-child {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -738,8 +754,18 @@ header.page-menu img.tax-institute-logo {
   header.page-menu > nav a::after {
     display: none;
   }
-  header.page-menu img.tax-institute-logo {
-    display: none;
+  header.page-menu div.institute-logos {
+    padding-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  header.page-menu div.institute-logos img {
+    display: inline-block;
+    width: 120px;
+    margin: 0;
+  }
+  header.page-menu div.institute-logos img:first-child {
+    margin-right: 40px;
   }
   .slides {
     display: none;
